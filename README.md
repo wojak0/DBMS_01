@@ -277,8 +277,11 @@ EOF
 </details>
 
 > **Screenshot 4:** Take a screenshot showing the output of the Task 1 SQLite query (the first and last few rows are sufficient), and insert it here.
->
-> `[insert screenshot]`
+
+> <img width="497" height="269" alt="13" src="https://github.com/user-attachments/assets/2bb8382b-9097-4cd0-831c-ed3bfcf2c246" />
+><img width="250" height="266" alt="14" src="https://github.com/user-attachments/assets/90f01369-0d4b-4596-a963-7f0fdebd7a4e" />
+
+
 
 ### Questions for Task 1
 
