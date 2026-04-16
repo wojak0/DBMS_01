@@ -7,7 +7,6 @@
 **Duration:** 60 minutes
 **Instructor:** Stephan Bökelmann · [sboekelmann@ep1.rub.de](mailto:sboekelmann@ep1.rub.de)
 
-**Student:** Ahmad hoteit .
 ---
 
 ## Learning Objective
