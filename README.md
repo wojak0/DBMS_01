@@ -59,7 +59,7 @@ sort --version | head -1
 
 If any of the above commands return `command not found`, resolve the installation before continuing.
 
-> **Screenshot 1:** Take a screenshot of your terminal showing all four successful version checks and insert it here.
+> **Screenshots 1:**
 >
 <img width="537" height="98" alt="1" src="https://github.com/user-attachments/assets/c59f65cd-5a3e-4c49-8fc3-a3ac346e095b" />
 <img width="478" height="219" alt="2" src="https://github.com/user-attachments/assets/dcf5930a-d126-4a85-84c7-6c60e455f552" />
