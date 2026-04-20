@@ -504,7 +504,7 @@ After completing all three tasks, answer the following questions:
 **Question A — Writing effort:**
 Which approach was easier to write correctly on the first try? Explain which properties of each language contributed to this.
 
-> SQL. Its readable, column-based syntax is more intuitive than managing complex shell abstract field numbers.
+> Sql is readable, column-based syntax is more intuitive than managing complex shell abstract field numbers.
 
 **Question B — Extensibility:**
 What would you need to change in the shell solution if a fifth sensor `T05` were added? What about the SQL solution? Which approach scales better — and why?
@@ -515,13 +515,13 @@ What would you need to change in the shell solution if a fifth sensor `T05` were
 The shell solution reads files from disk on every invocation. A database can cache frequently queried data in memory. What does this mean for performance with 10 000 sensors and multi-year measurement data?
 
 
-> Shell is slow because it must scan every file on disk, creating a massive I/O bottleneck. SQL uses indexing and caching to find data instantly without reading the entire dataset. At 10,000 sensors, SQL takes seconds while the shell takes hours.
+> Shell is slow because it must scan every file on disk, creating a massive I/O bottleneck. Sql uses indexing and caching to find data instantly without reading the entire dataset. At 10,000 sensors, Sql takes seconds while the shell takes hours.
 
 **Question D — Declarative vs. imperative:**
-SQL is called a *declarative* language: you describe *what* you want, not *how* to compute it. Bash/awk, by contrast, are *imperative*: you write step by step how the result is to be computed. In which of the three tasks did you feel this difference most clearly? Justify your choice.
+Sql is called a *declarative* language: you describe *what* you want, not *how* to compute it. Bash/awk, by contrast, are *imperative*: you write step by step how the result is to be computed. In which of the three tasks did you feel this difference most clearly? Justify your choice.
 
 
-> SQL calculates statistics automatically, whereas awk requires manual, step-by-step programming.
+> Sql calculates statistics automatically, whereas (awk) requires manual, step-by-step programming.
 
 
 > **Screenshot 7:** Take a final screenshot of your terminal showing the SQLite prompt with a query of your own invention on the `readings` table — one you came up with yourself that goes beyond the tasks above — and insert it here.
