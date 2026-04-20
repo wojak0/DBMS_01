@@ -514,7 +514,8 @@ What would you need to change in the shell solution if a fifth sensor `T05` were
 **Question C — Performance:**
 The shell solution reads files from disk on every invocation. A database can cache frequently queried data in memory. What does this mean for performance with 10 000 sensors and multi-year measurement data?
 
-> Sql is faster, it uses indexing and caching instead of scanning every file on the disk.
+
+> Shell is slow because it must scan every file on disk, creating a massive I/O bottleneck. SQL uses indexing and caching to find data instantly without reading the entire dataset. At 10,000 sensors, SQL takes seconds while the shell takes hours.
 
 **Question D — Declarative vs. imperative:**
 SQL is called a *declarative* language: you describe *what* you want, not *how* to compute it. Bash/awk, by contrast, are *imperative*: you write step by step how the result is to be computed. In which of the three tasks did you feel this difference most clearly? Justify your choice.
