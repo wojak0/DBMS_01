@@ -475,21 +475,25 @@ EOF
 
 > **Screenshot 6:** Take a screenshot showing the output of the Task 3 SQLite query — the four rows with sensor statistics — and insert it here.
 >
-> `[insert screenshot]`
+> <img width="676" height="409" alt="image" src="https://github.com/user-attachments/assets/b37eea82-1fb8-4c40-8896-4bf76fba43c0" />
+
+
 
 ### Questions for Task 3
 
 **Question 3.1:** The `awk` solution initialises `min=9999` and `max=-9999`. What would happen if all temperature values in the dataset were greater than 9999? How could the initialisation be made more robust?
 
-> *Your answer:*
+> The script would fail by stuck at 9999 if all values were higher, which can be fixed by initializing min and max with the first data point (NR==1 {min=max=$1}) rather than a fixed 'magic number
+> 
 
 **Question 3.2:** The SQL solution uses `GROUP BY sensor_id`. What would the query return *without* this clause — i.e. if you ran `SELECT sensor_id, MIN(value_celsius), MAX(value_celsius), ROUND(AVG(value_celsius), 1) FROM readings`? Try it and describe the result.
 
-> *Your answer:*
+> The query returns one single row showing statistics for the entire table. The sensor_id displayed is an arbitrary value, which is misleading since the math now reflects every sensor combined.
 
 **Question 3.3:** Extend the SQL query with an additional column `COUNT(*) AS num_readings` that shows the total number of measurements for each sensor. Write the complete extended query here.
 
-> *Your answer (extended SQL query):*
+> <img width="437" height="219" alt="16" src="https://github.com/user-attachments/assets/d2e1fd37-9c22-44fe-8e35-7ef2707a2afc" />
+
 
 ---
 
